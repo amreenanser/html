@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Student Health & Emergency Form</title>
+</head>
+<body>
+
+  <h2>Student Health & Emergency Info Form</h2>
+
+  <form action="/submit-health" method="post">
+    
+    <!-- Student Name -->
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="3" max="18">
+    <br><br>
+
+    <!-- Emergency Contact -->
+    <label for="contact">Emergency Contact Number:</label>
+    <input type="number" id="contact" name="contact">
+    <br><br>
+
+    <!-- Date of Last Medical Checkup -->
+    <label for="checkup">Last Medical Checkup Date:</label>
+    <input type="date" id="checkup" name="checkup">
+    <br><br>
+
+    <!-- Radio Buttons for Allergies -->
+    <label>Does the student have allergies?</label><br>
+    <input type="radio" id="allergyYes" name="allergies" value="Yes">
+    <label for="allergyYes">Yes</label><br>
+
+    <input type="radio" id="allergyNo" name="allergies" value="No">
+    <label for="allergyNo">No</label>
+    <br><br>
+
+    <!-- Checkboxes for Health Conditions -->
+    <label>Check any known health conditions:</label><br>
+    <input type="checkbox" id="asthma" name="condition" value="Asthma">
+    <label for="asthma">Asthma</label><br>
+
+    <input type="checkbox" id="diabetes" name="condition" value="Diabetes">
+    <label for="diabetes">Diabetes</label><br>
+
+    <input type="checkbox" id="vision" name="condition" value="Vision Issues">
+    <label for="vision">Vision Issues</label><br>
+
+    <input type="checkbox" id="none" name="condition" value="None">
+    <label for="none">None</label><br><br>
+
+    <!-- Textarea for Notes -->
+    <label for="notes">Any special instructions or health notes:</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+    <br><br>
+
+    <!-- Submit and Reset -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>
+</body>
+</html>

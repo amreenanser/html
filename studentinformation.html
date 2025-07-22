@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Capstone Form</title>
+</head>
+<body>
+
+  <h1>Student Information Form</h1>
+
+  <form action="/submit" method="post">
+    
+    <!-- Text Input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="fullname" required>
+    <br><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="5" max="100">
+    <br><br>
+
+    <!-- Date Input -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Favorite Subjects:</label><br>
+    <input type="checkbox" id="math" name="subject" value="Math">
+    <label for="math">Math</label><br>
+    <input type="checkbox" id="science" name="subject" value="Science">
+    <label for="science">Science</label><br>
+    <input type="checkbox" id="english" name="subject" value="English">
+    <label for="english">English</label><br><br>
+
+    <!-- Dropdown (Select) -->
+    <label for="grade">Select Grade:</label>
+    <select id="grade" name="grade">
+      <option value="6">6th Grade</option>
+      <option value="7" selected>7th Grade</option>
+      <option value="8">8th Grade</option>
+    </select>
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="comments">Comments or Questions:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+    <br><br>
+
+    <!-- Submit and Reset Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>

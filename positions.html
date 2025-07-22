@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS BOX MODEL</title>
+  <style>
+    body {
+      font-family: Arial;
+      line-height: 1.6;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 100px;
+      background-color: lightgray;
+      text-align: center;
+      line-height: 100px;
+      position: static; /* Default */
+    }
+
+    .box2 {
+      background-color: green;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    .parent {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+      margin: 50px;
+      color: white;
+    }
+
+    .child {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: coral;
+      padding: 10px;
+    }
+
+    .box4{
+      position: sticky;
+      top: 0; /* Required for sticky */
+    }
+
+    img{
+      width: 100px;
+      height: 100px;
+
+    }
+    .box5 {
+      background-color: yellow;
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box box1">Static</div>
+
+  <div class="box2">Relative</div>
+
+  <div class="parent">
+    <div class="child">Absolute</div>
+  </div>
+
+  <div class="box4">
+    <img src="images/laptop.avif" alt="Sticky GIF">
+  </div>
+
+  <div class="box5">Fixed</div>
+
+  <!-- Dummy content to allow scrolling -->
+  <p style="margin-top: 1000px;">Scroll down to test sticky and fixed position.</p>
+
+</body>
+</html>
